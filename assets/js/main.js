@@ -19,7 +19,7 @@
         if ($('#header').length) {
           scrollto -= $('#header').outerHeight();
         }
-
+        
         if ($(this).attr("href") == '#header') {
           scrollto = 0;
         }
