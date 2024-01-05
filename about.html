@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33641653-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script>
+    
+    <!-- Start of Scroll page to top-->
+    <script type="text/javascript">
+    var timeOut;
+    function scrollToTop() {
+      if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
+        window.scrollBy(0,-50);
+        timeOut=setTimeout('scrollToTop()',30);
+      }
+      else clearTimeout(timeOut);
+    }
+    </script>
+    <!-- End of Scroll page to top-->
+    
+    <script type="text/javascript">
+    var t;
+    var maxs;
+    var y=0;
+    function calls(m){
+    if(m == 1){
+      maxs = window.scrollMaxY;
+    }else{
+      maxs =0;
+    }
+    
+    t = setInterval(anims,40);
+    }
+    
+    function loads(){
+    
+    
+    //window.scrollBy(0,maxs);
+    //alert(window.scrollY);
+    
+    
+    
+    }
+    
+    function starts(k){
+      maxs =  k;
+      t = setInterval(anims,40);
+    }
+    
+    function anims(){
+    
+    
+    
+    
+      
+    var ydiff = window.scrollY-maxs;
+    var yspeed = ydiff/2;
+    yspeed *= 0.45;
+    y -= yspeed;
+    var k = Math.round(y);
+    window.scroll(0,k);
+    if(ydiff == 0){
+    clearInterval(t);
+    
+    
+      }
+      //document.title = yspeed;
+    }
+    
+    </script>
+    <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="js/slides.min.jquery.js"></script>
+    <script type="text/javascript" src="js/slides.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>COREN Pharma </title>
+    
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+</head>
+<body>
+  <img>
+  <h1>About COREN Pharma:</h1>
+  <p>
+    COREN Pharma, a burgeoning life sciences entity, is dedicated to delivering inventive, high-quality, and cost-effective products and solutions. Our focus is on empowering research organizations to expedite their research programs
+  </p>
+  <p> Leveraging cutting-edge science, cost-effective drug discovery and development capabilities, and robust manufacturing capacities, COREN Pharma's expertise extends from early concept to late-stage development, commercial leadership, and market supply.</p>
+  <p>
+    Our multidisciplinary scientific team comprises experts in Chemistry, Biology, Natural Products, Informatics, and Software Development, blending wet-lab and dry-lab experience
+  </p>
+  <p>
+    At the core of our business are Biosciences, Custom Synthesis, Natural Products, and Research and Development, collectively driving innovation and excellence in the life sciences industry.
+  </p>
+</body>
+</html>
