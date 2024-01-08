@@ -106,6 +106,8 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
+
+
 .nav-menu, .nav-menu * {
   margin: 0;
   padding: 0;
@@ -120,7 +122,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 .nav-menu a {
   display: block;
-  position: static;
+  position: relative;
   color: #4e4039;
   padding: 10px 15px;
   transition: 0.3s;
@@ -149,7 +151,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 .nav-menu .drop-down ul {
   display: block;
   position: absolute;
-  left: 0;
+  left: 100;
   top: calc(100% - 30px);
   z-index: 99;
   opacity: 0;
@@ -157,7 +159,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   padding: 10px 0;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: ease all 0.3s;
+  transition: ease all 0.15s;
 }
 
 .nav-menu .drop-down:hover > ul {
@@ -209,7 +211,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: IcoFont;
   position: absolute;
   right: 15px;
-}
+} 
 
 @media (max-width: 1366px) {
   .nav-menu .drop-down .drop-down ul {
